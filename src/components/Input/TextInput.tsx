@@ -11,7 +11,7 @@ import {
 import { FiAlertCircle } from 'react-icons/fi';
 
 interface InputProps extends ChakraInputProps {
-  name: string;
+  name?: string;
   error?: FieldError;
 }
 

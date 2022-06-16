@@ -32,13 +32,13 @@ import { FiAlertCircle, FiPlus } from 'react-icons/fi';
 import { api } from '../../services/api';
 
 export interface FileInputProps {
-  name: string;
+  name?: string;
   error?: FieldError;
   setImageUrl: Dispatch<SetStateAction<string>>;
   localImageUrl: string;
   setLocalImageUrl: Dispatch<SetStateAction<string>>;
   setError: UseFormSetError<FieldValues>;
-  onChange: (
+  onChange?: (
     event: React.ChangeEvent<HTMLInputElement>
   ) => Promise<boolean | void>;
   trigger: UseFormTrigger<FieldValues>;
